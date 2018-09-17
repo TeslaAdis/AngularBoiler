@@ -1,0 +1,1 @@
+Contains services that app needs and cannot work without. Eg ui.service, auth.service, auth.guard etc

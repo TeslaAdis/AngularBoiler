@@ -1,0 +1,1 @@
+Contains routes and top level components that are behind login. (eg dashboard.component, profile.component etc)

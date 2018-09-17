@@ -1,0 +1,1 @@
+Keeps small stuff that every other module might/will need. 

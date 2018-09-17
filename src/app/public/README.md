@@ -1,0 +1,1 @@
+Contains routes and top level components that are public. (eg about.component, contact.component, loginform.component)

@@ -1,0 +1,1 @@
+Contains custom features/functionalites go that are directly connected to core of the app.
