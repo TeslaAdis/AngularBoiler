@@ -1,0 +1,8 @@
+<mat-toolbar color="primary">
+  <h1>LoremIpsum</h1>
+  <div *ngIf="!_userService.isLogged">
+    <button mat-button>Login</button>
+    <button mat-button>Register</button>
+  </div>
+  <app-active-user *ngIf="_userService.isLogged"></app-active-user>
+</mat-toolbar>

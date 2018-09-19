@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { FeaturesModule } from './features/features.module';
 import { LandingModule } from './landing/landing.module';
 import { AdminModule } from './admin/admin.module';
 
@@ -23,8 +22,7 @@ import { AdminModule } from './admin/admin.module';
     SharedModule,
     CoreModule,
     LandingModule,
-    AdminModule,
-    FeaturesModule
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]
