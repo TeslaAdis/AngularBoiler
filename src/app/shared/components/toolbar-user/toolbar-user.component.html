@@ -1,5 +1,4 @@
-<div *ngIf="_userService.isLogged">
-  <button mat-button (click)="moveToDashboard()"> Go to dashboard</button>
+<div *ngIf="_userService.isLogged" class="user-avatar-wrapper">
   <button mat-mini-fab class="button-avatar" [style.backgroundImage]="'url('+ _userService.user.image +')'"
     [matMenuTriggerFor]="userMenu"></button>
 </div>

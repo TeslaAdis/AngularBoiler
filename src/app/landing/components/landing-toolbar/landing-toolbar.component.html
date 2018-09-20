@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <app-toolbar-logo></app-toolbar-logo>
+  <div *ngIf="!_userService.isLogged">
+    <button mat-button (click)="moveToLogin()">Login</button>
+    <button mat-button (click)="moveToRegister()">Register</button>
+  </div>
+
+  <div *ngIf="_userService.isLogged">
+    <button mat-button (click)="moveToDashboard()"> Go to dashboard</button>
+    <app-toolbar-user></app-toolbar-user>
+  </div>
+</mat-toolbar>

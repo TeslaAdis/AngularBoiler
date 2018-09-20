@@ -4,6 +4,17 @@
 */
 
 html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+
+:host {
+    height: 100%
+}
+
+html,
 body,
 div,
 span,

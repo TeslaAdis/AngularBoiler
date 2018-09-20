@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Injectable()
 export class UserService {
@@ -11,10 +12,11 @@ export class UserService {
     };
     isLogged: boolean;
 
-    constructor() {
-        // load user state
+    constructor(private router: Router) {
+        // Load user state
         this.initiateUserState();
     }
+
 
     private initiateUserState(): void {
         // Load user from storage;
@@ -27,6 +29,7 @@ export class UserService {
         this.isLogged = true;
     }
     public logout(): void {
+        this.router.navigate(['/']);
         this.user = null;
         this.isLogged = false;
     }

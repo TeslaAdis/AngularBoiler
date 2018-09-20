@@ -1,17 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 import { MaterialImportModule } from './material.module';
-import { ActiveUserComponent } from './components/active-user/active-user.component';
+import { ToolbarUserComponent } from './components/toolbar-user/toolbar-user.component';
+import { ToolbarLogoComponent } from './components/toolbar-logo/toolbar-logo.component';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialImportModule
   ],
-  exports: [
-    MaterialImportModule,
-    ActiveUserComponent
+  declarations: [
+    ToolbarUserComponent,
+    ToolbarLogoComponent
   ],
-  declarations: [ActiveUserComponent]
+  exports: [
+    CommonModule,
+    FormsModule,
+    MaterialImportModule,
+    ToolbarUserComponent,
+    ToolbarLogoComponent
+  ],
 })
 export class SharedModule { }

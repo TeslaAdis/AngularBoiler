@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from './services/user.service';
+import { AppSettingsService } from './services/app-settings.service';
 
 @NgModule({
   imports: [
@@ -8,6 +9,9 @@ import { UserService } from './services/user.service';
   ],
   exports: [],
   declarations: [],
-  providers: [UserService]
+  providers: [
+    AppSettingsService,
+    UserService
+  ]
 })
 export class CoreModule { }
