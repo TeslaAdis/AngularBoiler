@@ -7,7 +7,7 @@ Angular project base using angular6 and module practices
 - Landing page with stock examples
 
 // Dashboard Features
-- Login, Register
+- Login, Register - Form, FormHelper service (getError);
 - Dashboard home, Header, Left menu (Collapse) 
 - Data
 

@@ -1,8 +1,8 @@
 <mat-toolbar color="primary">
   <app-toolbar-logo></app-toolbar-logo>
   <div *ngIf="!_userService.isLogged">
-    <button mat-button (click)="moveToLogin()">Login</button>
-    <button mat-button (click)="moveToRegister()">Register</button>
+    <button mat-button (click)="openLogin()">Login</button>
+    <button mat-button (click)="openRegister()">Register</button>
   </div>
 
   <div *ngIf="_userService.isLogged">

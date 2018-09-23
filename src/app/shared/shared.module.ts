@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { MaterialImportModule } from './material.module';
 import { ToolbarUserComponent } from './components/toolbar-user/toolbar-user.component';
@@ -18,6 +19,7 @@ import { ToolbarLogoComponent } from './components/toolbar-logo/toolbar-logo.com
   exports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MaterialImportModule,
     ToolbarUserComponent,
     ToolbarLogoComponent

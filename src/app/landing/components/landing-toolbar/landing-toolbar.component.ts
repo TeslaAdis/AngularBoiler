@@ -1,6 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { MatDialog } from '@angular/material';
+
 import { UserService } from 'src/app/core/services/user.service';
+
+import { LoginComponent } from '../login/login.component';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-landing-toolbar',
@@ -11,7 +16,8 @@ export class LandingToolbarComponent implements OnInit {
 
   constructor(
     public _userService: UserService,
-    private router: Router
+    private router: Router,
+    private dialog: MatDialog
   ) { }
 
   ngOnInit(): void {
@@ -20,10 +26,14 @@ export class LandingToolbarComponent implements OnInit {
   moveToDashboard(): void {
     this.router.navigate(['/dashboard']);
   }
-  moveToLogin(): void {
-    this.router.navigate(['/login']);
+  openLogin(): void {
+    const dialogRef = this.dialog.open(LoginComponent, {
+      width: '300px'
+    });
   }
-  moveToRegister(): void {
-    this.router.navigate(['/register']);
+  openRegister(): void {
+    const dialogRef = this.dialog.open(RegisterComponent, {
+      width: '300px'
+    });
   }
 }

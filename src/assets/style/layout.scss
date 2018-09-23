@@ -21,6 +21,28 @@
     }
 }
 
+.page-content{
+    padding: 1em;
+    height: auto;
+}
+
+.page-content-center{
+    height: 100%;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    > * {
+        width: 100%
+    }
+}
+
 mat-toolbar {
     justify-content: space-between;
 }

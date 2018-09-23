@@ -2,16 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingLayoutComponent } from './components/landing-layout/landing-layout.component';
-import { LoginComponent } from './login/login.component';
-import { RegisterComponent } from './register/register.component';
+import { HomeComponent } from './pages/home/home.component';
+import { AboutComponent } from './pages/about/about.component';
 
 
 
 const routes: Routes = [
     {
         path: '', component: LandingLayoutComponent, children: [
-            { path: 'login', component: LoginComponent },
-            { path: 'register', component: RegisterComponent }
+            { path: '', component: HomeComponent },
+            { path: 'about', component: AboutComponent }
         ]
     }
 
