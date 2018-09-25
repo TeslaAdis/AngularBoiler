@@ -1,3 +1,19 @@
+html,
+body {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: .5em;
+}
+
 .toolbar-app-logo {
     width: 24px;
     height: 24px;
@@ -21,24 +37,24 @@
     }
 }
 
-.page-content{
+.page-content {
     padding: 1em;
     height: auto;
 }
 
-.page-content-center{
+.page-content-center {
     height: 100%;
-    padding:0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.form-group{
+.form-group {
     display: flex;
     flex-direction: column;
-    > * {
+    >* {
         width: 100%
     }
 }

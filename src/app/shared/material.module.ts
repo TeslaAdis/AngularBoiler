@@ -1,14 +1,15 @@
-import { NgModule } from "@angular/core";
+import { NgModule } from '@angular/core';
 
-import { MatButtonModule } from "@angular/material";
-import { MatCheckboxModule } from "@angular/material";
-import { MatToolbarModule } from "@angular/material";
-import { MatGridListModule } from "@angular/material/grid-list";
-import { MatMenuModule } from "@angular/material/menu";
-import { MatDialogModule } from "@angular/material/dialog";
-//Forms
-import { MatFormFieldModule } from "@angular/material";
-import { MatInputModule } from "@angular/material";
+import { MatButtonModule } from '@angular/material';
+import { MatCheckboxModule } from '@angular/material';
+import { MatToolbarModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDividerModule } from '@angular/material/divider';
+// Forms
+import { MatFormFieldModule } from '@angular/material';
+import { MatInputModule } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { MatInputModule } from "@angular/material";
     MatMenuModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ],
   exports: [
     MatButtonModule,
@@ -29,7 +31,8 @@ import { MatInputModule } from "@angular/material";
     MatMenuModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    MatDividerModule
   ]
 })
-export class MaterialImportModule {}
+export class MaterialImportModule { }

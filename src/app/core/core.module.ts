@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UserService } from './services/user.service';
 import { AppSettingsService } from './services/app-settings.service';
+import { FormHelperService } from './services/form-helper.service';
 
 @NgModule({
   imports: [
@@ -11,7 +12,8 @@ import { AppSettingsService } from './services/app-settings.service';
   declarations: [],
   providers: [
     AppSettingsService,
-    UserService
+    UserService,
+    FormHelperService
   ]
 })
 export class CoreModule { }
