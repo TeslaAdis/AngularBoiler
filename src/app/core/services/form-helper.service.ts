@@ -13,7 +13,8 @@ export class FormHelperService {
         email: 'Please enter valid email',
         minlength: '{{controlName}} should be at least {{requiredLength}} chars',
         maxlength: '{{controlName}} can not exceed more than {{requiredLength}}',
-        pattern: 'Please enter valid {{controlName}}'
+        pattern: 'Please enter valid {{controlName}}',
+        valueMatch: '{{controlName}} does not match'
     };
 
     constructor() {
@@ -28,7 +29,7 @@ export class FormHelperService {
         const fc = fg.get(fcName);
         if (fc.errors && this.errors[Object.keys(fc.errors)[0]]) {
             const errorType: string = Object.keys(fc.errors)[0];
-            let errorMsg = this.errors[errorType].replace(/{{controlName}}/g, displayName || '');
+            let errorMsg = this.errors[errorType].replace(/{{controlName}}/g, displayName || fcName);
 
             if (errorType === 'min') {
                 errorMsg = errorMsg.replace(/{{min}}/g, fc.errors[errorType].min);

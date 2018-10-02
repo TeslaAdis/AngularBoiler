@@ -1,15 +1,17 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 
+export interface User {
+    firstName: string;
+    lastName: string;
+    email: string;
+    image: string;
+}
+
 @Injectable()
 export class UserService {
 
-    user: {
-        firstName: string;
-        lastName: string;
-        email: string;
-        image: string;
-    };
+    user: User;
     isLogged: boolean;
 
     constructor(private router: Router) {
@@ -28,6 +30,11 @@ export class UserService {
         this.router.navigate(['/']);
         this.user = null;
         this.isLogged = false;
+    }
+
+    public login(user: User): void {
+        this.user = user;
+        this.isLogged = true;
     }
 
     private runTest() {

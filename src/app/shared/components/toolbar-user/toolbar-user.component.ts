@@ -15,8 +15,11 @@ export class ToolbarUserComponent implements OnInit {
   ngOnInit() {
   }
 
-  logoutUser(): void {
+  public logoutUser(): void {
     this._userService.logout();
   }
 
+  public getInitials(): String {
+    return (this._userService.user.firstName[0] + this._userService.user.lastName[0]).toUpperCase();
+  }
 }

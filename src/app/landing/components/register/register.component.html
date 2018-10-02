@@ -1,3 +1,41 @@
-<div class="page-content">
-  This is register;
+<div class="dialog-wrapper">
+  <h1 class="dialog-title">Register</h1>
+  <form class="dialog-content" [formGroup]="registerForm" id="registerForm" (ngSubmit)="register()">
+    <div class="form-group">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Enter first name" required formControlName="firstName">
+        <mat-error>{{formHelper.getError(registerForm, 'firstName', 'First name')}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Enter your last name" required formControlName="lastName">
+        <mat-error>{{formHelper.getError(registerForm, 'lastName', 'Last name')}}</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="form-group">
+      <mat-form-field>
+        <input type="text" matInput placeholder="Enter your email" required formControlName="email">
+        <mat-error>{{formHelper.getError(registerForm, 'email', 'Email')}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field>
+        <input type="password" matInput placeholder="Enter your password" required formControlName="password">
+        <mat-error>{{formHelper.getError(registerForm, 'password', 'Password')}}</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="form-group">
+      <mat-form-field>
+        <input type="password" matInput placeholder="Confirm password" required formControlName="passwordConfirm">
+        <mat-error>{{formHelper.getError(registerForm, 'passwordConfirm', 'Confirmed password')}}</mat-error>
+      </mat-form-field>
+    </div>
+
+  </form>
+  <div class="dialog-actions dialog-actions-right">
+    <button mat-raised-button color="primary" form="registerForm" type="submit">Register</button>
+  </div>
 </div>

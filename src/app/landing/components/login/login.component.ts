@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
+
+import { UserService } from '../../../core/services/user.service';
 import { FormHelperService } from '../../../core/services/form-helper.service';
 
 @Component({
@@ -15,19 +17,29 @@ export class LoginComponent implements OnInit {
   constructor(
     public dialogRef: MatDialogRef<LoginComponent>,
     private fb: FormBuilder,
-    public formHelper: FormHelperService
+    public formHelper: FormHelperService,
+    private user: UserService
   ) { }
 
   ngOnInit() {
     this.loginForm = this.fb.group({
-      email: ['', Validators.email],
-      password: ['']
+      email: ['', [Validators.email, Validators.required]],
+      password: ['', [Validators.required]]
     });
   }
 
-  login() {
+
+  public login(): void {
     this.loginFormSubmited = true;
-    console.log(this.loginForm);
+    if (this.loginForm.valid) {
+      this.user.login({
+        firstName: 'Lorem',
+        lastName: 'Ipsum',
+        email: this.loginForm.get('email').value,
+        image: null
+      });
+      this.dialogRef.close();
+    }
   }
 
 }

@@ -1,6 +1,10 @@
 <div *ngIf="_userService.isLogged" class="user-avatar-wrapper">
   <button mat-mini-fab class="button-avatar" [style.backgroundImage]="'url('+ _userService.user.image +')'"
-    [matMenuTriggerFor]="userMenu"></button>
+    [matMenuTriggerFor]="userMenu">
+    <span *ngIf="!_userService.user.image">
+      {{getInitials()}}
+    </span>
+  </button>
 </div>
 
 <mat-menu #userMenu="matMenu">
