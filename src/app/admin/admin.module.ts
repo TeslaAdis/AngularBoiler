@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AdminLayoutComponent } from './admin-layout/admin-layout.component';
-
 import { AdminRoutingModule } from './admin.routing';
-import { AdminToolbarComponent } from './admin-toolbar/admin-toolbar.component';
+
+import { AdminLayoutComponent } from './components/admin-layout/admin-layout.component';
+import { AdminToolbarComponent } from './components/admin-toolbar/admin-toolbar.component';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 

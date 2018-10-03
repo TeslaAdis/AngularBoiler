@@ -11,6 +11,8 @@ import { CoreModule } from './core/core.module';
 import { LandingModule } from './landing/landing.module';
 import { AdminModule } from './admin/admin.module';
 
+import { AuthGuard } from './core/guards/auth-guard';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -24,7 +26,7 @@ import { AdminModule } from './admin/admin.module';
     LandingModule,
     AdminModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

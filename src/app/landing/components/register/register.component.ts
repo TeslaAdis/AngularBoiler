@@ -3,7 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
 
 import { FormHelperService } from '../../../core/services/form-helper.service';
-import { UserService } from '../../../core/services/user.service';
+import { UserService } from '../../../core/authentication/user.service';
 import { valueMatch } from '../../../shared/validators/valueMatch';
 
 

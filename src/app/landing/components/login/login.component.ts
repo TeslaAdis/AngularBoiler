@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
 
-import { UserService } from '../../../core/services/user.service';
+import { UserService } from '../../../core/authentication/user.service';
 import { FormHelperService } from '../../../core/services/form-helper.service';
 
 @Component({

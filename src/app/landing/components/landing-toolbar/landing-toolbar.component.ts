@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MatDialog } from '@angular/material';
 
-import { UserService } from 'src/app/core/services/user.service';
+import { UserService } from 'src/app/core/authentication/user.service';
 
 import { LoginComponent } from '../login/login.component';
 import { RegisterComponent } from '../register/register.component';
