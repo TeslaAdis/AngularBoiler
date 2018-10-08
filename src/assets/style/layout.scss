@@ -38,7 +38,6 @@ h6 {
 }
 
 .page-content {
-    padding: 1em;
     height: auto;
 }
 
@@ -61,4 +60,14 @@ h6 {
 
 mat-toolbar {
     justify-content: space-between;
+}
+
+.home-section {
+    padding: 80px 0;
+    display: block;
+    .container {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
 }

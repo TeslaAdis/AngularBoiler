@@ -7,7 +7,7 @@ import { AuthGuard } from './core/guards/auth-guard';
 
 const routes: Routes = [
   { path: '', loadChildren: () => LandingModule },
-  { path: 'dashboard', loadChildren: () => AdminModule, canActivate: [AuthGuard] }
+  { path: 'admin', loadChildren: () => AdminModule, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

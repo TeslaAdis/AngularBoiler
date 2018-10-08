@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './components/admin-layout/admin-layout.component';
 
 const routes: Routes = [
-    { path: '', component: AdminLayoutComponent }
+    { path: '', component: AdminLayoutComponent, children: [] }
 ];
 
 @NgModule({

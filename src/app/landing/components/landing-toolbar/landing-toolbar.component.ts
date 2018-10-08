@@ -24,15 +24,15 @@ export class LandingToolbarComponent implements OnInit {
   }
 
   moveToDashboard(): void {
-    this.router.navigate(['/dashboard']);
+    this.router.navigate(['/admin']);
   }
   openLogin(): void {
-    const dialogRef = this.dialog.open(LoginComponent, {
+    this.dialog.open(LoginComponent, {
       width: '300px'
     });
   }
   openRegister(): void {
-    const dialogRef = this.dialog.open(RegisterComponent, {
+    this.dialog.open(RegisterComponent, {
       width: '300px'
     });
   }
