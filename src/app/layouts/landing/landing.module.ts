@@ -12,6 +12,10 @@ import { LandingToolbarComponent } from './components/landing-toolbar/landing-to
 import { LandingLayoutComponent } from './components/landing-layout/landing-layout.component';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
+import { HomeHeadingComponent } from '../landing/pages/home/home-heading/home-heading.component';
+import { HomeProductsComponent } from '../landing/pages/home/home-products/home-products.component';
+import { HomeFooterComponent } from '../landing/pages/home/home-footer/home-footer.component';
+import { HomeProductItemComponent } from '../landing/pages/home/home-products/home-product-item/home-product-item.component';
 
 
 @NgModule({
@@ -26,7 +30,11 @@ import { HomeComponent } from './pages/home/home.component';
     LoginComponent,
     RegisterComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    HomeHeadingComponent,
+    HomeProductsComponent,
+    HomeFooterComponent,
+    HomeProductItemComponent
   ],
   entryComponents: [
     LoginComponent,

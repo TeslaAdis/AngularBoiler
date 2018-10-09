@@ -1,8 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { LandingModule } from './landing/landing.module';
-import { AdminModule } from './admin/admin.module';
+import { LandingModule } from './layouts/landing/landing.module';
+import { AdminModule } from './layouts/admin/admin.module';
+
 import { AuthGuard } from './core/guards/auth-guard';
 
 const routes: Routes = [

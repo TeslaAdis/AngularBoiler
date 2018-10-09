@@ -8,8 +8,9 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-import { LandingModule } from './landing/landing.module';
-import { AdminModule } from './admin/admin.module';
+/* layouts */
+import { LandingModule } from './layouts/landing/landing.module';
+import { AdminModule } from './layouts/admin/admin.module';
 
 import { AuthGuard } from './core/guards/auth-guard';
 
