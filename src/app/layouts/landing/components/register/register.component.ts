@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { MatDialogRef } from '@angular/material';
 
-import { FormHelperService } from '../../../core/services/form-helper.service';
-import { UserService } from '../../../core/authentication/user.service';
-import { valueMatch } from '../../../shared/validators/valueMatch';
-
+import { FormHelperService } from 'src/app/core/services/form-helper.service';
+import { UserService } from 'src/app/core/authentication/user.service';
+import { valueMatch } from 'src/app/shared/validators/valueMatch';
 
 @Component({
   selector: 'app-register',
@@ -30,7 +29,7 @@ export class RegisterComponent implements OnInit {
       lastName: ['', [Validators.required]],
       email: ['', [Validators.email, Validators.required]],
       password: ['', [Validators.required]],
-      passwordConfirm: ['', [Validators.required, , valueMatch('password')]],
+      passwordConfirm: ['', [Validators.required, valueMatch('password')]],
     });
   }
 

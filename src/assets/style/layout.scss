@@ -13,6 +13,36 @@ h5,
 h6 {
     margin-bottom: .5em;
 }
+h1{
+    font-size: 36px;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+h2{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+h3{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 14px;
+}
+h4{
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 12px;
+}
+h5{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px;
+}
+h6{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 8px;
+}
 
 .toolbar-app-logo {
     width: 24px;
@@ -62,12 +92,3 @@ mat-toolbar {
     justify-content: space-between;
 }
 
-.home-section {
-    padding: 80px 0;
-    display: block;
-    .container {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 0 15px;
-    }
-}

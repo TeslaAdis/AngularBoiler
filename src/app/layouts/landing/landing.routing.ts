@@ -2,15 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { LandingLayoutComponent } from './components/landing-layout/landing-layout.component';
-import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
+
+import { HomeModule } from './pages/home/home.module';
 
 
 
 const routes: Routes = [
     {
         path: '', component: LandingLayoutComponent, children: [
-            { path: '', component: HomeComponent },
+            { path: '', loadChildren: () => HomeModule },
             { path: 'about', component: AboutComponent }
         ]
     }
