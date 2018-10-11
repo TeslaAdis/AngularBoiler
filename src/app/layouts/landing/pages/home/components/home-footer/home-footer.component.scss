@@ -1,0 +1,27 @@
+.home-footer {
+    background-color: #141414;
+    padding: 50px 0;
+    color: white;
+    .home-footer-container {
+        display: flex;
+        flex-direction: row;
+        .home-footer-disclaimer {
+            flex: 1 1 50%;
+        }
+        .home-footer-contact {
+            flex: 1 1 50%;
+        }
+        .heading {
+            position: relative;
+            margin-bottom: 2em;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -.4em;
+                left: 0;
+                width: 2.5em;
+                border-bottom: 3px solid yellow;
+            }
+        }
+    }
+}
