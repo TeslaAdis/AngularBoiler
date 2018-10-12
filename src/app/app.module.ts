@@ -8,9 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
-/* layouts */
-import { LandingModule } from './layouts/landing/landing.module';
-import { AdminModule } from './layouts/admin/admin.module';
 
 import { AuthGuard } from './core/guards/auth-guard';
 
@@ -23,9 +20,7 @@ import { AuthGuard } from './core/guards/auth-guard';
     BrowserAnimationsModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule,
-    LandingModule,
-    AdminModule
+    CoreModule
   ],
   providers: [AuthGuard],
   bootstrap: [AppComponent]

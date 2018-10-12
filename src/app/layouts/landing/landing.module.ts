@@ -21,7 +21,7 @@ import { HomeModule } from './pages/home/home.module';
     CommonModule,
     SharedModule,
     LandingRoutingModule,
-    HomeModule,
+    HomeModule
   ],
   declarations: [
     LandingLayoutComponent,
